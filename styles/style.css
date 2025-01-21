@@ -17,7 +17,18 @@
   text-decoration: none;
   border: none;
 }
-
+.btn-blue{
+  color: #64C8FF;
+}
+.btn-orrange{
+  color: #F0AA00;
+}
+.btn-purple{
+  color: #8700FF;
+}
+.text-center{
+  text-align: center;
+}
 .d-flex {
   display: flex;
 }
@@ -31,7 +42,8 @@
   justify-content: space-between;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 16px 0;
+  /* border: 1px solid palegreen; */
 }
 .items-container {
   gap: 32px;
@@ -179,10 +191,86 @@ padding: 130px 240px 170px 140px;
     font-size: 30px;
     font-weight: bold;
     position: relative;
-    top:7px;
+    top:2px;
 }
+/* standard curriculum styles */
+.curriculum{
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ .curriculum-container{
+  max-width: 1160px;
+  margin:60px auto 180px auto;
+ }
+ .curriculum-container .card{
+  border-radius: 18px;
+  box-shadow: -1px 0 3px rgba(242, 232, 255, 0.8), 1px 0 3px rgba(242, 232, 255, 0.8), 0 -1px 3px rgba(242, 232, 255, 0.8), 0 1px 3px rgba(242, 232, 255, 0.8);
+
+  padding: 90px 30px 90px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+
+}
+.curriculum-container .card:nth-child(1){
+  background-image: linear-gradient(#DEF5FF, white, white, white);
+
+}
+.curriculum-container .card:nth-child(2){
+  background-image: linear-gradient(#FFF4DC, white, white, white);
+
+}
+.curriculum-container .card:nth-child(3){
+  background-image: linear-gradient(#F2E8FF, white, white, white);
+
+}
+ .card-container{
+  gap: 28px;
+  
+
+ }
+ .curriculum-container .card>H5{
+  font-size: 1.5rem;
+ }
+ .curriculum-title{
+  margin-bottom: 80px;
+  font-size: 2.8rem;
+  font-weight: bold;
+ }
+ .curriculum-container .card>p{
+  font-size: 1rem;
+  color: #808080;
+  font-weight: 500;
+ }
+ .curriculum-container .card>button{
+  background: none;
+  padding: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+ }
+ .arrows{
+  margin-top: 60px;
+  margin-bottom: 80px;
+  
+ }
+ .arrows i{
+  background: #FEA301;
+  margin-left: 10px;
+  padding: 12px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1.5rem;
+  
+}
+
 @media screen and (max-width: 576px) {
   /* navbar responsiveness */
+  .navbar{
+    margin: 12px 16px;
+  }
   .brand-name,
   .items-container,
   .nav-btn {
@@ -215,6 +303,7 @@ padding: 130px 240px 170px 140px;
     font-size: 0.875rem;
     margin-top: 18px;
   }
+  /* footer responsiveness */
   .footer-container{
 /* flex-direction: column; */
 /* margin-left: 20px; */
@@ -252,4 +341,33 @@ font-size: 2.25rem;
   width: 30px;;
   height: 30px;
 }
+/* curriculum responsiveness */
+.card-container{
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 16px;
+
+ }
+ .arrows{
+  display: none;
+ }
+ .curriculum-title{
+  font-size: 1.6rem;
+  margin-bottom:20px;
+  margin-top: -20px;
+ }
+ .curriculum-container .card>H5{
+  font-size: 1.25rem;
+ }
+ .curriculum-container .card>p{
+  font-size: 0.75rem;
+  
+ }
+ .curriculum-container .card>button{
+  font-size: 0.85rem;
+ }
+ .curriculum-container .card{
+  gap: 22px;
+  padding: 26px 18px;
+ }
 }
